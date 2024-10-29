@@ -1,0 +1,119 @@
+/* Variabel Global untuk Warna */
+:root {
+    --primary: #b78d65;
+    --secondary: #f5e3d3;
+    --light: #f8f8f8;
+    --dark: #252525;
+    --text-color: #777777;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Typography */
+h1, h2, h3, h4, .fw-bold {
+    font-weight: 600 !important;
+}
+
+h5, h6, .fw-normal {
+    font-weight: 400 !important;
+}
+
+/* Button Styles */
+.btn {
+    font-weight: 500;
+    transition: 0.5s;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.btn-primary, .btn-secondary {
+    color: #fff;
+}
+
+.btn-outline-body {
+    color: var(--primary);
+    border: 1px solid var(--text-color);
+}
+
+.btn-outline-body:hover {
+    color: #fff;
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+/* Navbar Styling */
+.navbar .nav-link {
+    color: var(--dark);
+    padding: 15px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--primary);
+}
+
+@media (max-width: 991px) {
+    .navbar .nav-link {
+        padding: 10px 15px;
+    }
+}
+
+/* Header Carousel */
+.header-carousel .owl-carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 20px;
+    }
+
+    .header-carousel .owl-carousel-item {
+        min-height: 400px;
+    }
+}
+
+/* Team Section */
+.team-item::after {
+    transition: height 0.4s ease;
+}
+
+.team-item:hover::after {
+    height: 100%;
+    background: var(--primary);
+}
+
+.team-item .team-social .btn:hover {
+    color: #fff;
+    background: var(--primary);
+}
+
+/* Footer Styling */
+.footer .btn-link {
+    color: var(--text-color);
+}
+
+.footer .btn-link:hover {
+    color: var(--primary);
+    letter-spacing: 1px;
+}
+
+.footer .form-control {
+    border: 1px solid var(--text-color);
+}
+
+.footer .copyright {
+    font-size: 14px;
+    color: var(--light);
+}
+
+.footer .copyright a:hover {
+    color: var(--primary);
+}
